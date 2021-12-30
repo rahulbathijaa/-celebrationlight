@@ -8,9 +8,62 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var nameTextField: String = ""
+    @State var favteamTextField: String = ""
+    @State var dataArray: [String] = []
+    
     var body: some View {
-        Text("Hello, world!")
+        NavigationView{
+            
+            VStack {
+            
+            TextField("Type your name...", text: $nameTextField)
+                .padding()
+                .background(Color.gray.opacity(0.3))
+                .foregroundColor(.red)
+                .font(.headline)
+        
+                
+            TextField("Type your favorite team...", text: $favteamTextField)
+                .padding()
+                .background(Color.gray.opacity(0.3))
+                .foregroundColor(.red)
+                .font(.headline)
+            
+
+                
+                Button(action: {
+                        saveText()
+                }, label: {
+                    Text("Save".lowercased())
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.red.opacity(0.3))
+                        .foregroundColor(.red)
+                        .font(.headline)
+                })
+                
+                
+                ForEach(dataArray, id: \.self) { data in
+                    Text(data)
+                }
+                
+                Spacer()
+            
+            }
+            
             .padding()
+            .navigationTitle("Welcome!")
+        }
+
+    }
+
+    func saveText() {
+        dataArray.append(nameTextField)
+        nameTextField = ""
+        dataArray.append(favteamTextField)
+        favteamTextField = ""
     }
 }
 

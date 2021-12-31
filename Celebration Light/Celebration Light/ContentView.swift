@@ -12,9 +12,9 @@ struct MainView: View {
     @State var nameTextField: String = ""
     @State var favteamTextField: String = ""
     @State var dataArray: [String] = []
+    @State var data: serializedData = serializedData()
     
     // Writing variables that will change as program runs
-    
     var body: some View {
         NavigationView{
             
@@ -28,6 +28,7 @@ struct MainView: View {
                 
             // Text field for name
         
+            
                 
             TextField("Type your favorite team...", text: $favteamTextField)
                 .padding()
@@ -70,21 +71,24 @@ struct MainView: View {
     }
 
     func saveText() {
+        data.storeInfo(name:nameTextField, team:favteamTextField)
+
         dataArray.append(nameTextField)
         nameTextField = ""
         dataArray.append(favteamTextField)
         favteamTextField = ""
+        
+        
     }
     
     // Function to save and append text as code changes
-    
 
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+        
     }
 }
-
 

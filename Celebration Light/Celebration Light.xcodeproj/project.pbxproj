@@ -11,6 +11,8 @@
 		0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1B897277E447500B9CF7E /* ContentView.swift */; };
 		0FC1B89A277E447700B9CF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1B899277E447700B9CF7E /* Assets.xcassets */; };
 		0FC1B89D277E447700B9CF7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1B89C277E447700B9CF7E /* Preview Assets.xcassets */; };
+		0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */; };
+		0FCEBF9E277FA5B7007D39D4 /* API Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBF9D277FA5B7007D39D4 /* API Call.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0FC1B897277E447500B9CF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FC1B899277E447700B9CF7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC1B89C277E447700B9CF7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedData.swift; sourceTree = "<group>"; };
+		0FCEBF9D277FA5B7007D39D4 /* API Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Call.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */,
 				0FC1B897277E447500B9CF7E /* ContentView.swift */,
+				0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */,
+				0FCEBF9D277FA5B7007D39D4 /* API Call.swift */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,
 				0FC1B89B277E447700B9CF7E /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */,
 				0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */,
+				0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */,
+				0FCEBF9E277FA5B7007D39D4 /* API Call.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,8 @@ struct MainView: View {
     @State var favteamTextField: String = ""
     @State var dataArray: [String] = []
     
+    // Writing variables that will change as program runs
+    
     var body: some View {
         NavigationView{
             
@@ -23,6 +25,8 @@ struct MainView: View {
                 .background(Color.gray.opacity(0.3))
                 .foregroundColor(.red)
                 .font(.headline)
+                
+            // Text field for name
         
                 
             TextField("Type your favorite team...", text: $favteamTextField)
@@ -30,6 +34,8 @@ struct MainView: View {
                 .background(Color.gray.opacity(0.3))
                 .foregroundColor(.red)
                 .font(.headline)
+                
+            // Text field for favorite team -- to be remade into a drop down menu with new UI
             
 
                 
@@ -44,17 +50,21 @@ struct MainView: View {
                         .font(.headline)
                 })
                 
+            
+                // Button and action to save string
                 
                 ForEach(dataArray, id: \.self) { data in
                     Text(data)
                 }
+                
+                // Writing text when saved
                 
                 Spacer()
             
             }
             
             .padding()
-            .navigationTitle("Welcome!")
+            .navigationTitle("Celebration Light!")
         }
 
     }
@@ -65,10 +75,16 @@ struct MainView: View {
         dataArray.append(favteamTextField)
         favteamTextField = ""
     }
+    
+    // Function to save and append text as code changes
+    
+
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }
-} 
+}
+
+

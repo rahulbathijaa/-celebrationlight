@@ -86,6 +86,13 @@ class Api {
         .resume()
         // resume session call
         
+       // dataFromJsonString =
+        // jsonString =
+        // cityFromData =
+        // if let dataFromJsonString = jsonString?.data(using: .utf8) {
+        //  let cityFromData = try JSONDecoder().decode(City.self, from: dataFromJsonString)
+        //  print(cityFromData.name)
+        
         
     }
 }

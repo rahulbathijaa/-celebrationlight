@@ -21,7 +21,7 @@ struct FavTeam: Codable, Identifiable {
 // Var of fav_team which will be a boolean of true or false
 
 class Api {
-    func getFavTeam(completion: @escaping ([FavTeam]) -> () ){
+    func postFavTeam(completion: @escaping ([FavTeam]) -> () ){
         
         let mockData: [String: Any] = [
              "teams": [
@@ -86,7 +86,7 @@ class Api {
         .resume()
         // resume session call
         
-       // dataFromJsonString =
+       // dataFromJsonString = mockJson
         // jsonString =
         // cityFromData =
         // if let dataFromJsonString = jsonString?.data(using: .utf8) {
@@ -94,12 +94,32 @@ class Api {
         //  print(cityFromData.name)
         
         
+        func getFavTeam(){
+            
+            if let data = UserDefaults.standard.data(forKey:"mockJson") {
+             
+                do {
+                    let decoder = JSONDecoder()
+                    let userInformation = try decoder.decode(FavTeam.self, from: data)
+                    print(FavTeam.self)
+                }
+                catch {
+                        print("Unable to Decode Note (\(error))")
+            
+                
+            }
+            
+        }
+        
+        
+        
+        
     }
 }
 
 
 
-
+}
 
 
 

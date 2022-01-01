@@ -9,27 +9,27 @@ import Foundation
 import SwiftUI
 
 
-struct FavTeam: Codable, Identifiable {
-    private(set) var id = UUID()
-    var fav_team: Bool
-    var teams: String
-}
-
-// Codable because JSON format
-// Identifiable to loop through data in Swift
-// UUID to create unique identifier
-// Var of fav_team which will be a boolean of true or false
-
 class Api {
-    func postFavTeam(completion: @escaping ([FavTeam]) -> () ){
+    struct FavTeam: Codable, Identifiable {
+        private(set) var id = UUID()
+        var fav_team: Bool
+        var teams: String
+        
+        // Codable because JSON format
+        // Identifiable to loop through data in Swift
+        // UUID to create unique identifier
+        // Var of fav_team which will be a boolean of true or false
+    }
+    
+    func findTeam(favTeam: String) -> Bool{
         
         let mockData: [String: Any] = [
              "teams": [
                 "Miami Dolphins" : false,
                 "Green Bay Packers" : false,
                 "Kansas City Chiefs" : false,
-                "Tampa Bay Buccaneers" : false,
-                "New England Patriots" : true,
+                "Tampa Bay Buccaneers" : true,
+                "New England Patriots" : false,
                 "San Francisco 49ers" : false,
                 "Las Vegas Raiders" : false,
                 "Chicago Bears" : false,
@@ -54,7 +54,18 @@ class Api {
                 ]
         ]
         
-        var mockJson = JSONSerialization.isValidJSONObject(mockData)
+        if let nestedDict = mockData["teams"] as? [String:Any] {
+            if let result = nestedDict[favTeam] as? Bool {
+                return result
+            }
+        }
+      
+        return false
+    }
+      
+    
+    func postFavTeam(completion: @escaping ([FavTeam]) -> () ){
+        
 
         // Writing example of JSON data as a hashmap
         
@@ -100,7 +111,7 @@ class Api {
              
                 do {
                     let decoder = JSONDecoder()
-                    let userInformation = try decoder.decode(FavTeam.self, from: data)
+                    let teamInformation = try decoder.decode(FavTeam.self, from: data)
                     print(FavTeam.self)
                 }
                 catch {

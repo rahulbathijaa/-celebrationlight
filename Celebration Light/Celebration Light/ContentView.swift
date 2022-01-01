@@ -13,6 +13,7 @@ struct MainView: View {
     @State var favteamTextField: String = ""
     @State var dataArray: [String] = []
     @State var data: serializedData = serializedData()
+    @State var api: Api = Api()
     
     // Writing variables that will change as program runs
     var body: some View {
@@ -72,12 +73,19 @@ struct MainView: View {
 
     func saveText() {
         data.storeInfo(name:nameTextField, team:favteamTextField)
+        let userInformation = data.getInfo()
+        let lightOn = api.findTeam(favTeam: userInformation.fav_team)
 
+        if lightOn == true{
+            dataArray.append("this light is working")
+        }else{
+            dataArray.append("failed")
+        }
         dataArray.append(nameTextField)
         nameTextField = ""
         dataArray.append(favteamTextField)
         favteamTextField = ""
-        
+     
         
     }
     

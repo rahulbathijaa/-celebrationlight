@@ -23,17 +23,19 @@ class serializedData{
 
     }
     
-    func getInfo(){
+    func getInfo() -> UserInformation{
         if let data = UserDefaults.standard.data(forKey:"note") {
          
             do {
                 let decoder = JSONDecoder()
                 let userInformation = try decoder.decode(UserInformation.self, from: data)
+                return userInformation
             }
             catch {
                     print("Unable to Decode Note (\(error))")
             }
         }
+        return UserInformation(name:"", fav_team: "")
     }
 }
 

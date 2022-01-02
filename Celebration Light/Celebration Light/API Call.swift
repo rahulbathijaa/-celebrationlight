@@ -54,19 +54,21 @@ class Api {
                 ]
         ]
         
+        // Creating mock data as an example
+        
         if let nestedDict = mockData["teams"] as? [String:Any] {
             if let result = nestedDict[favTeam] as? Bool {
                 return result
             }
         }
-      
         return false
     }
+    
+    // Extracting Json value to determine which team is true
       
     
     func postFavTeam(completion: @escaping ([FavTeam]) -> () ){
         
-
         // Writing example of JSON data as a hashmap
         
         guard let url = URL(string: "url") else     {
@@ -96,36 +98,26 @@ class Api {
         }
         .resume()
         // resume session call
-        
-       // dataFromJsonString = mockJson
-        // jsonString =
-        // cityFromData =
-        // if let dataFromJsonString = jsonString?.data(using: .utf8) {
-        //  let cityFromData = try JSONDecoder().decode(City.self, from: dataFromJsonString)
-        //  print(cityFromData.name)
+
         
         
-        func getFavTeam(){
-            
-            if let data = UserDefaults.standard.data(forKey:"mockJson") {
-             
-                do {
-                    let decoder = JSONDecoder()
-                    let teamInformation = try decoder.decode(FavTeam.self, from: data)
-                    print(FavTeam.self)
-                }
-                catch {
-                        print("Unable to Decode Note (\(error))")
-            
-                
-            }
-            
-        }
-        
-        
-        
-        
-    }
+//        func getFavTeam(){
+//
+//            if let data = UserDefaults.standard.data(forKey:"mockJson") {
+//
+//                do {
+//                    let decoder = JSONDecoder()
+//                    let teamInformation = try decoder.decode(FavTeam.self, from: data)
+//                    print(FavTeam.self)
+//                }
+//                catch {
+//                        print("Unable to Decode Note (\(error))")
+//
+//
+//            }
+//
+//        }
+//    }
 }
 
 

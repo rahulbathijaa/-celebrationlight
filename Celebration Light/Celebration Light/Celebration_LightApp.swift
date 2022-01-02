@@ -11,11 +11,10 @@ import SwiftUI
 struct Celebration_LightApp: App {
     var body: some Scene {
         WindowGroup {
-            
+
             MainView()
         }
     }
-    
 }
 
 

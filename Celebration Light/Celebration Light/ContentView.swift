@@ -15,7 +15,6 @@ struct MainView: View {
     @State var data: serializedData = serializedData()
     @State var api: Api = Api()
     
-    // Writing variables that will change as program runs
     var body: some View {
         NavigationView{
             
@@ -67,6 +66,8 @@ struct MainView: View {
             
             .padding()
             .navigationTitle("Celebration Light!")
+            
+            // Title
         }
 
     }
@@ -75,6 +76,7 @@ struct MainView: View {
         data.storeInfo(name:nameTextField, team:favteamTextField)
         let userInformation = data.getInfo()
         let lightOn = api.findTeam(favTeam: userInformation.fav_team)
+        
 
         if lightOn == true{
             dataArray.append("this light is working")
@@ -85,8 +87,6 @@ struct MainView: View {
         nameTextField = ""
         dataArray.append(favteamTextField)
         favteamTextField = ""
-     
-        
     }
     
     // Function to save and append text as code changes
@@ -96,7 +96,7 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-        
+    
     }
 }
 

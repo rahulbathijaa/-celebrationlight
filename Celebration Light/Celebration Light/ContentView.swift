@@ -72,6 +72,7 @@ struct MainView: View {
 
     }
 
+    
     func saveText() {
         data.storeInfo(name:nameTextField, team:favteamTextField)
         let userInformation = data.getInfo()

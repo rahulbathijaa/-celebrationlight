@@ -14,7 +14,7 @@
 		0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */; };
 		0FCEBF9E277FA5B7007D39D4 /* API Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBF9D277FA5B7007D39D4 /* API Call.swift */; };
 		0FCEBFA22781207E007D39D4 /* CoreBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */; };
-		0FCEBFA627827292007D39D4 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA527827292007D39D4 /* MainScreen.swift */; };
+		0FCEBFA8278FAF40007D39D4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA7278FAF40007D39D4 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedData.swift; sourceTree = "<group>"; };
 		0FCEBF9D277FA5B7007D39D4 /* API Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Call.swift"; sourceTree = "<group>"; };
 		0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetooth.swift; sourceTree = "<group>"; };
-		0FCEBFA527827292007D39D4 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		0FCEBFA7278FAF40007D39D4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */,
 				0FCEBF9D277FA5B7007D39D4 /* API Call.swift */,
 				0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */,
-				0FCEBFA527827292007D39D4 /* MainScreen.swift */,
+				0FCEBFA7278FAF40007D39D4 /* MainView.swift */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,
 				0FC1B89B277E447700B9CF7E /* Preview Content */,
 			);
@@ -149,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCEBFA627827292007D39D4 /* MainScreen.swift in Sources */,
 				0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */,
+				0FCEBFA8278FAF40007D39D4 /* MainView.swift in Sources */,
 				0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */,
 				0FCEBFA22781207E007D39D4 /* CoreBluetooth.swift in Sources */,
 				0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */,

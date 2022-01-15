@@ -16,6 +16,9 @@
 		0FCEBFA22781207E007D39D4 /* CoreBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */; };
 		0FCEBFA8278FAF40007D39D4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA7278FAF40007D39D4 /* MainView.swift */; };
 		0FCEBFAA2790F7C0007D39D4 /* App Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */; };
+		0FCEBFAD2792660C007D39D4 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFAC2792660C007D39D4 /* TeamController.swift */; };
+		0FCEBFAF2792662B007D39D4 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFAE2792662B007D39D4 /* SoundController.swift */; };
+		0FCEBFB127926647007D39D4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEBFB027926647007D39D4 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetooth.swift; sourceTree = "<group>"; };
 		0FCEBFA7278FAF40007D39D4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "App Storyboard.storyboard"; sourceTree = "<group>"; };
+		0FCEBFAC2792660C007D39D4 /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		0FCEBFAE2792662B007D39D4 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		0FCEBFB027926647007D39D4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 				0FCEBF9D277FA5B7007D39D4 /* API Call.swift */,
 				0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */,
 				0FCEBFA7278FAF40007D39D4 /* MainView.swift */,
+				0FCEBFAB27926235007D39D4 /* Navigation Views */,
 				0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,
 				0FC1B89B277E447700B9CF7E /* Preview Content */,
@@ -80,6 +87,16 @@
 				0FC1B89C277E447700B9CF7E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FCEBFAB27926235007D39D4 /* Navigation Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FCEBFAC2792660C007D39D4 /* TeamController.swift */,
+				0FCEBFAE2792662B007D39D4 /* SoundController.swift */,
+				0FCEBFB027926647007D39D4 /* SettingsController.swift */,
+			);
+			path = "Navigation Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCEBFB127926647007D39D4 /* SettingsController.swift in Sources */,
 				0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */,
 				0FCEBFA8278FAF40007D39D4 /* MainView.swift in Sources */,
 				0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */,
 				0FCEBFA22781207E007D39D4 /* CoreBluetooth.swift in Sources */,
+				0FCEBFAD2792660C007D39D4 /* TeamController.swift in Sources */,
+				0FCEBFAF2792662B007D39D4 /* SoundController.swift in Sources */,
 				0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */,
 				0FCEBF9E277FA5B7007D39D4 /* API Call.swift in Sources */,
 			);

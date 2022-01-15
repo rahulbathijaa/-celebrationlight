@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-1450" y="1262"/>
         </scene>
-        <!--View Controller-->
+        <!--Sound Controller-->
         <scene sceneID="cZn-sx-c7t">
             <objects>
-                <viewController id="FU5-YQ-E7j" sceneMemberID="viewController">
+                <viewController id="FU5-YQ-E7j" customClass="SoundController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hi2-5e-KIc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,12 +74,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mb2-GK-8kS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-640" y="1257"/>
+            <point key="canvasLocation" x="-733" y="1262"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Controller-->
         <scene sceneID="EzH-Q3-4qS">
             <objects>
-                <viewController id="6df-tC-2Ss" sceneMemberID="viewController">
+                <viewController id="6df-tC-2Ss" customClass="SettingsController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDJ-x6-6fp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1J-8G-hQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="1262"/>
+            <point key="canvasLocation" x="3" y="1262"/>
         </scene>
         <!--Item-->
         <scene sceneID="6zz-1Q-GCT">

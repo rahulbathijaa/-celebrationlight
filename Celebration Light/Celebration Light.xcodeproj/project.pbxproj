@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F471E9C2796250100B9E8CE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F471E9B2796250100B9E8CE /* WelcomeViewController.swift */; };
 		0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */; };
 		0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1B897277E447500B9CF7E /* ContentView.swift */; };
 		0FC1B89A277E447700B9CF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1B899277E447700B9CF7E /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F471E9B2796250100B9E8CE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0FC1B892277E447500B9CF7E /* Celebration Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celebration Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebration_LightApp.swift; sourceTree = "<group>"; };
 		0FC1B897277E447500B9CF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,
 				0FC1B89B277E447700B9CF7E /* Preview Content */,
-				0F471E9B2796250100B9E8CE /* WelcomeViewController.swift */,
 			);
 			path = "Celebration Light";
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCEBFB127926647007D39D4 /* SettingsController.swift in Sources */,
-				0F471E9C2796250100B9E8CE /* WelcomeViewController.swift in Sources */,
 				0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */,
 				0FCEBFA8278FAF40007D39D4 /* MainView.swift in Sources */,
 				0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */,

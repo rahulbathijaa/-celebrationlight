@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct MainView: View {
     
@@ -101,6 +102,25 @@ struct MainView_Previews: PreviewProvider {
     }
 }
 
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any aditional setup after loading the view
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if Core.shared.isNewUser() {
+            // show onboarding
+            let vc = storyboard?.instantiateViewController(withIdentifier: "welcome") as! WelcomeViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
+    }
+    
+}
+
 class Core {
     
     static let shared = Core()
@@ -114,3 +134,4 @@ class Core {
         UserDefaults.standard.set(true, forKey: "isNewUser")
     }
 }
+// sets initial view

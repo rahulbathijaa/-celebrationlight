@@ -8,13 +8,18 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    @IBOutlet var holderView:UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .red
         // Do any additional setup after loading the view.
     }
     
+    
+    // WelcomeViewController linked to Storyboard
 
     /*
     // MARK: - Navigation

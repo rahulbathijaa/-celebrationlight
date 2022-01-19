@@ -11,6 +11,11 @@ import UIKit
 
 struct OnboardingView: View {
     @Binding var shouldShowOnboarding: Bool
+    @State var nameTextField: String = ""
+    @State var favteamTextField: String = ""
+    @State var dataArray: [String] = []
+    @State var data: serializedData = serializedData()
+    @State var api: Api = Api()
   
     
     var body: some View{
@@ -40,6 +45,8 @@ struct OnboardingView: View {
                 shouldShowOnboarding: $shouldShowOnboarding
             )
             
+            MainView()
+            
             PageView(
                 title: "Home",
                 subtitle: "Go home wherever that might be",
@@ -47,11 +54,18 @@ struct OnboardingView: View {
                 showsDismissButton: true,
                 shouldShowOnboarding: $shouldShowOnboarding
             )
-        }
+            
+           
+            }
+        
         .tabViewStyle(PageTabViewStyle())
         // Tab view style to show these four pages
-    }
+        }
 }
+       
+    
+   
+
 
 struct PageView: View {
     let title: String
@@ -92,7 +106,6 @@ struct PageView: View {
             }
         }
     }
-    
 }
 
 
@@ -170,7 +183,7 @@ struct MainView: View {
 
         if lightOn == true{
             dataArray.append("this light is working")
-        }else{
+        } else{
             dataArray.append("failed")
         }
         dataArray.append(nameTextField)

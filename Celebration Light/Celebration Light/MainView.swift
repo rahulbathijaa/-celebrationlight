@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Main: View {
-    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @AppStorage("__shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     
     var body: some View {

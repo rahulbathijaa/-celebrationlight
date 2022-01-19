@@ -69,10 +69,10 @@
 			children = (
 				0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */,
 				0FC1B897277E447500B9CF7E /* ContentView.swift */,
+				0FCEBFA7278FAF40007D39D4 /* MainView.swift */,
 				0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */,
 				0FCEBF9D277FA5B7007D39D4 /* API Call.swift */,
 				0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */,
-				0FCEBFA7278FAF40007D39D4 /* MainView.swift */,
 				0FCEBFAB27926235007D39D4 /* Navigation Views */,
 				0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,

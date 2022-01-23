@@ -14,6 +14,7 @@ struct Celebration_LightApp: App {
         WindowGroup {
             Main()
             MainView()
+            TabBar()
         }
     }
 }

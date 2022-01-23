@@ -11,15 +11,17 @@ class teamController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
-    
 }
 
 struct SoundController: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+        Text("SoundController")
+                .navigationTitle("Hey")
+        }
+        .navigationViewStyle(.stack)
+
     }
 }
 

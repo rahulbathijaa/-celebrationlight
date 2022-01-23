@@ -63,10 +63,13 @@ class SettingsVC: UIViewController {
 
 
 struct Main: View {
-    @AppStorage("_shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+        
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
 
     
     var body: some View {
+        
+        
         NavigationView {
             
             VStack{

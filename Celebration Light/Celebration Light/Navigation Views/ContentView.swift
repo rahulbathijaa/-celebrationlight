@@ -19,6 +19,8 @@ struct OnboardingView: View {
   
     
     var body: some View{
+        
+        
         TabView {
             PageView(
                 title: "Push Notifications",

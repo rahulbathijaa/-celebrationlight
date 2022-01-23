@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SettingsController: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+        Text("SettingsController")
+                .navigationTitle("Hey")
+        }
+        .navigationViewStyle(.stack)
     }
 }
 

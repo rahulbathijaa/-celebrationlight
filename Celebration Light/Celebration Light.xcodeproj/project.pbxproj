@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F471EA0279E1FB900B9E8CE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F471E9F279E1FB900B9E8CE /* TabBar.swift */; };
 		0FC1B896277E447500B9CF7E /* Celebration_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */; };
 		0FC1B898277E447500B9CF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1B897277E447500B9CF7E /* ContentView.swift */; };
 		0FC1B89A277E447700B9CF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1B899277E447700B9CF7E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F471E9F279E1FB900B9E8CE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0FC1B892277E447500B9CF7E /* Celebration Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celebration Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebration_LightApp.swift; sourceTree = "<group>"; };
 		0FC1B897277E447500B9CF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,12 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				0FC1B895277E447500B9CF7E /* Celebration_LightApp.swift */,
-				0FC1B897277E447500B9CF7E /* ContentView.swift */,
+				0FCEBFAB27926235007D39D4 /* Navigation Views */,
 				0FCEBFA7278FAF40007D39D4 /* MainView.swift */,
 				0FCEBF9B277F9A1F007D39D4 /* SerializedData.swift */,
 				0FCEBF9D277FA5B7007D39D4 /* API Call.swift */,
 				0FCEBFA12781207E007D39D4 /* CoreBluetooth.swift */,
-				0FCEBFAB27926235007D39D4 /* Navigation Views */,
 				0FCEBFA92790F7C0007D39D4 /* App Storyboard.storyboard */,
 				0FC1B899277E447700B9CF7E /* Assets.xcassets */,
 				0FC1B89B277E447700B9CF7E /* Preview Content */,
@@ -92,6 +93,8 @@
 		0FCEBFAB27926235007D39D4 /* Navigation Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FC1B897277E447500B9CF7E /* ContentView.swift */,
+				0F471E9F279E1FB900B9E8CE /* TabBar.swift */,
 				0FCEBFAC2792660C007D39D4 /* TeamController.swift */,
 				0FCEBFAE2792662B007D39D4 /* SoundController.swift */,
 				0FCEBFB027926647007D39D4 /* SettingsController.swift */,
@@ -179,6 +182,7 @@
 				0FCEBFAF2792662B007D39D4 /* SoundController.swift in Sources */,
 				0FCEBF9C277F9A1F007D39D4 /* SerializedData.swift in Sources */,
 				0FCEBF9E277FA5B7007D39D4 /* API Call.swift in Sources */,
+				0F471EA0279E1FB900B9E8CE /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

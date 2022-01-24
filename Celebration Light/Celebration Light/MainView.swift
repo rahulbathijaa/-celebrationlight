@@ -8,57 +8,57 @@
 import SwiftUI
 import UIKit
 
-class ViewController: UITabBarController {
-    
-    var body: some View {
-        Main()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // create instance of view controllers
-        let teamVC = TeamVC()
-        let soundVC = SoundVC()
-        let settingsVC = SettingsVC()
-        
-        //set title
-        teamVC.title = "Home"
-        soundVC.title = "Sound"
-        settingsVC.title = "Notify"
-        //assign view controllers to tab bar
-        self.setViewControllers([teamVC, soundVC, settingsVC], animated: false)
-        
-        guard let items = self.tabBar.items else {return}
-        
-        let images = ["house", "star", "bell"]
-        
-        for x in 0...2 {
-            items[x].image = UIImage(systemName: images[x])
-        }
-    }
-}
-
-class TeamVC: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .lightGray
-    }
-}
-
-class SoundVC: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-    }
-}
-
-class SettingsVC: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemTeal
-    }
-}
+//class ViewController: UITabBarController {
+//
+//    var body: some View {
+//        Main()
+//    }
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // create instance of view controllers
+//        let teamVC = TeamVC()
+//        let soundVC = SoundVC()
+//        let settingsVC = SettingsVC()
+//
+//        //set title
+//        teamVC.title = "Home"
+//        soundVC.title = "Sound"
+//        settingsVC.title = "Notify"
+//        //assign view controllers to tab bar
+//        self.setViewControllers([teamVC, soundVC, settingsVC], animated: false)
+//
+//        guard let items = self.tabBar.items else {return}
+//
+//        let images = ["house", "star", "bell"]
+//
+//        for x in 0...2 {
+//            items[x].image = UIImage(systemName: images[x])
+//        }
+//    }
+//}
+//
+//class TeamVC: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .lightGray
+//    }
+//}
+//
+//class SoundVC: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemBlue
+//    }
+//}
+//
+//class SettingsVC: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemTeal
+//    }
+//}
 
 
 

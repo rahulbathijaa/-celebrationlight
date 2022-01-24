@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TabBar: View {
+    @AppStorage("_____shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    
     var body: some View {
         TabView {
             TeamController()
@@ -17,14 +19,19 @@ struct TabBar: View {
             
             SoundController()
                 .tabItem {
-                    Label("Sound", systemImage: "house")
+                    Label("Sound", systemImage: "applelogo")
                 }
             
             SettingsController()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
+            
         }
+        .fullScreenCover(isPresented: $shouldShowOnboarding, content: {OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+
+        })
+
     }
 }
 

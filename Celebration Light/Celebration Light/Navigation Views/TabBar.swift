@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
-    @AppStorage("_____shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @AppStorage("___;shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     
     var body: some View {
         TabView {

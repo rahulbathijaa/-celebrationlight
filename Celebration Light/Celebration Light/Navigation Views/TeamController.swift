@@ -14,6 +14,10 @@ struct TeamController: View {
                 .navigationTitle("Hey")
         }
         .navigationViewStyle(.stack)
+        
+        
+//        let backgroundImage = UIImageView(frame:UiScreen.main.bounds)
+//        backgroundImage.image = UIImage(named: ")
     }
 }
 

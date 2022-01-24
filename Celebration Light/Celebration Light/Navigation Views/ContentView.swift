@@ -64,6 +64,10 @@ struct OnboardingView: View {
         // Tab view style to show these four pages
         }
 }
+       
+    
+   
+
 
 struct PageView: View {
     let title: String
@@ -73,6 +77,7 @@ struct PageView: View {
     @Binding var shouldShowOnboarding: Bool
     
     var body: some View {
+        
         VStack {
             Image(systemName: imageName)
                 .resizable()

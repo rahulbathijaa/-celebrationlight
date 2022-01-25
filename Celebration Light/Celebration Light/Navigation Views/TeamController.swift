@@ -11,13 +11,9 @@ struct TeamController: View {
     var body: some View {
         NavigationView{
         Text("TeamController")
-                .navigationTitle("Hey")
+                .navigationTitle("Select your favorite team")
         }
         .navigationViewStyle(.stack)
-        
-        
-//        let backgroundImage = UIImageView(frame:UiScreen.main.bounds)
-//        backgroundImage.image = UIImage(named: ")
     }
 }
 

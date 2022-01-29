@@ -33,12 +33,12 @@ struct CustomController : UIViewControllerRepresentable {
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<CustomController>) -> UIViewController {
         
-        let storyboard = UIStoryboard(name: "Custom", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "App Storyboard", bundle: Bundle.main)
         let controller = storyboard.instantiateViewController(identifier: "TeamController")
         return controller
     }
     
-    func updateUIViewController( _ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<CustomController>) {
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<CustomController>) {
         
     }
 }

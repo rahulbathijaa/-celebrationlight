@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CelebrationLightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="oJe-6Z-Bou">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="-50" width="414" height="946"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qzL-ul-R1D"/>
@@ -26,7 +26,9 @@
                             <constraint firstItem="oJe-6Z-Bou" firstAttribute="trailing" secondItem="qzL-ul-R1D" secondAttribute="trailing" id="Kna-2E-Ejx"/>
                             <constraint firstItem="oJe-6Z-Bou" firstAttribute="leading" secondItem="qzL-ul-R1D" secondAttribute="leading" id="Kwa-5V-icv"/>
                             <constraint firstItem="oJe-6Z-Bou" firstAttribute="top" secondItem="94O-bh-Zgw" secondAttribute="top" id="SxC-Jx-MXD"/>
+                            <constraint firstItem="oJe-6Z-Bou" firstAttribute="top" secondItem="94O-bh-Zgw" secondAttribute="top" constant="-80" id="aBh-vd-tcK"/>
                             <constraint firstAttribute="bottom" secondItem="oJe-6Z-Bou" secondAttribute="bottom" id="gL0-gO-Phv"/>
+                            <constraint firstItem="oJe-6Z-Bou" firstAttribute="top" secondItem="94O-bh-Zgw" secondAttribute="top" constant="-50" id="zF8-Zb-M9V"/>
                         </constraints>
                     </view>
                 </viewController>

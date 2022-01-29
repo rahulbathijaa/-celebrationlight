@@ -10,9 +10,11 @@ import SwiftUI
 struct TeamController: View {
     var body: some View {
         
-        CustomController()
+        
 
         NavigationView{
+            
+        CustomController()
                     
         Text("TeamController")
                 .navigationTitle("Select your favorite team")

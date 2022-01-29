@@ -36,6 +36,62 @@
             </objects>
             <point key="canvasLocation" x="-311.59420289855075" y="-129.24107142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ydc-uh-4gB">
+            <objects>
+                <viewController storyboardIdentifier="SoundController" id="7gW-sU-E8Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cuv-5u-pi5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CelebrationLightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="D5d-ae-wgH">
+                                <rect key="frame" x="0.0" y="-50" width="414" height="946"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bhS-44-nPo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D5d-ae-wgH" firstAttribute="top" secondItem="Cuv-5u-pi5" secondAttribute="top" id="MAm-VA-lke"/>
+                            <constraint firstItem="D5d-ae-wgH" firstAttribute="leading" secondItem="bhS-44-nPo" secondAttribute="leading" id="Nb5-TU-fKv"/>
+                            <constraint firstItem="D5d-ae-wgH" firstAttribute="top" secondItem="Cuv-5u-pi5" secondAttribute="top" constant="-80" id="RoU-Fm-15M"/>
+                            <constraint firstItem="D5d-ae-wgH" firstAttribute="top" secondItem="Cuv-5u-pi5" secondAttribute="top" constant="-50" id="ZH0-zB-E6W"/>
+                            <constraint firstAttribute="bottom" secondItem="D5d-ae-wgH" secondAttribute="bottom" id="e3g-7M-3UF"/>
+                            <constraint firstItem="D5d-ae-wgH" firstAttribute="trailing" secondItem="bhS-44-nPo" secondAttribute="trailing" id="rzu-Bn-T5i"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mx4-aO-knV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OFi-Xd-jZD">
+            <objects>
+                <viewController storyboardIdentifier="SettingsController" id="Gzk-m7-1N5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWk-Sg-1Jx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CelebrationLightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wt8-71-clN">
+                                <rect key="frame" x="0.0" y="-50" width="414" height="946"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LcD-Rc-eUd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wt8-71-clN" firstAttribute="top" secondItem="KWk-Sg-1Jx" secondAttribute="top" constant="-50" id="I9F-jr-M3a"/>
+                            <constraint firstItem="wt8-71-clN" firstAttribute="trailing" secondItem="LcD-Rc-eUd" secondAttribute="trailing" id="WVg-8b-OwO"/>
+                            <constraint firstAttribute="bottom" secondItem="wt8-71-clN" secondAttribute="bottom" id="a63-Up-aU6"/>
+                            <constraint firstItem="wt8-71-clN" firstAttribute="leading" secondItem="LcD-Rc-eUd" secondAttribute="leading" id="aSn-7q-aaa"/>
+                            <constraint firstItem="wt8-71-clN" firstAttribute="top" secondItem="KWk-Sg-1Jx" secondAttribute="top" constant="-80" id="isa-VG-cro"/>
+                            <constraint firstItem="wt8-71-clN" firstAttribute="top" secondItem="KWk-Sg-1Jx" secondAttribute="top" id="zJJ-mH-rX8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHZ-57-pI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-129"/>
+        </scene>
     </scenes>
     <color key="tintColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>

@@ -8,18 +8,43 @@
 import SwiftUI
 
 struct TeamController: View {
+    
+    @State var data: serializedData = serializedData()
+    @State var api: Api = Api()
+    
     var body: some View {
         
         
 
         NavigationView{
             
-        CustomController()
-                    
-        Text("TeamController")
-                .navigationTitle("Select your favorite team")
+
+        
+            VStack(alignment: .leading) {
+                
+                
+                CustomController()
+                
+//                Text("Your favorites")
+//                    .font(.headline)
+//                    .padding(.leading, 15)
+//                    .padding(.top, 5)
+//
+////                ScrollView(.horizontal, showsIndicators: false) {
+////                    HStack(alignment: .top, spacing: 0) {
+////
+////                    }
+////                }
+//                .frame(height:185)
+            }
+            
+                
+          
+        
+        
         }
-        .navigationViewStyle(.stack)
+//        .navigationViewStyle(.stack)
+
     }
 }
 

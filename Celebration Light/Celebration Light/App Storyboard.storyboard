@@ -6,10 +6,11 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Featured-->
+        <!--Select your favorite team-->
         <scene sceneID="fLo-88-eOo">
             <objects>
                 <viewController id="1Qt-Lh-6hg" sceneMemberID="viewController">
@@ -20,30 +21,81 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CelebrationLightBackground" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-B2-GDb">
                                 <rect key="frame" x="-38" y="0.0" width="493" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lB1-jI-Ci0">
-                                <rect key="frame" x="88" y="191" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HomeScreenGradient" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-JY-NSy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" ambiguous="YES" text="" placeholder="Type any team name..." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiy-j8-0Tk">
+                                <rect key="frame" x="0.0" y="177" width="327" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dS-Y7-BYr">
+                                <rect key="frame" x="63" y="309" width="116" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wfq-ep-hn2" customClass="CustomView">
+                                <rect key="frame" x="63" y="593" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vk-Bu-ghV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TeamsCell" id="NHo-hC-WRl" customClass="CustomView">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xsy-jk-Xdm" customClass="CustomView">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TeamBackdropImage" id="qSF-X6-wSq">
+                                                    <rect key="frame" x="-56" y="0.0" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Other teams playing today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqg-wO-vxi">
+                                <rect key="frame" x="60" y="542" width="222.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V67-n2-EUi"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
+                            <constraint firstItem="Wfq-ep-hn2" firstAttribute="leading" secondItem="V67-n2-EUi" secondAttribute="leading" constant="60" id="8My-tw-8SI"/>
                             <constraint firstAttribute="trailing" secondItem="DpT-B2-GDb" secondAttribute="trailing" id="9Kn-bq-Xvl"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="bottom" secondItem="V67-n2-EUi" secondAttribute="bottom" id="AfD-g9-bfl"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="top" secondItem="x1F-HG-3Mm" secondAttribute="top" id="Brk-mJ-jCS"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="bottom" secondItem="V67-n2-EUi" secondAttribute="bottom" id="DAJ-RX-cF6"/>
+                            <constraint firstItem="sQz-JY-NSy" firstAttribute="top" secondItem="x1F-HG-3Mm" secondAttribute="top" id="GGT-xF-zdp"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="top" secondItem="x1F-HG-3Mm" secondAttribute="top" id="H3t-g7-0ej"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="top" secondItem="x1F-HG-3Mm" secondAttribute="top" id="KMm-IS-QOb"/>
+                            <constraint firstItem="sQz-JY-NSy" firstAttribute="trailing" secondItem="V67-n2-EUi" secondAttribute="trailing" id="MKq-LG-IuH"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="trailing" secondItem="V67-n2-EUi" secondAttribute="trailing" id="NV2-6K-sjN"/>
+                            <constraint firstItem="Wfq-ep-hn2" firstAttribute="top" secondItem="yqg-wO-vxi" secondAttribute="bottom" constant="25" id="OdS-bf-NC9"/>
+                            <constraint firstItem="sQz-JY-NSy" firstAttribute="centerX" secondItem="x1F-HG-3Mm" secondAttribute="centerX" id="al4-3B-5lC"/>
+                            <constraint firstItem="yiy-j8-0Tk" firstAttribute="leading" secondItem="V67-n2-EUi" secondAttribute="leading" id="bsD-o0-Rvc"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="bottom" secondItem="V67-n2-EUi" secondAttribute="bottom" id="cUg-Dn-O8g"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="top" secondItem="x1F-HG-3Mm" secondAttribute="top" id="i1R-Og-aDd"/>
+                            <constraint firstItem="sQz-JY-NSy" firstAttribute="leading" secondItem="V67-n2-EUi" secondAttribute="leading" id="ky9-2f-jWk"/>
+                            <constraint firstItem="yqg-wO-vxi" firstAttribute="leading" secondItem="V67-n2-EUi" secondAttribute="leading" constant="60" id="qA3-z3-jjt"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="leading" secondItem="x1F-HG-3Mm" secondAttribute="leading" id="rLK-4V-Sw0"/>
                             <constraint firstItem="V67-n2-EUi" firstAttribute="bottom" secondItem="DpT-B2-GDb" secondAttribute="bottom" id="vLu-qv-fZO"/>
                             <constraint firstItem="DpT-B2-GDb" firstAttribute="leading" secondItem="V67-n2-EUi" secondAttribute="leading" id="zze-L2-ouU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Featured" id="jCs-th-Tj7"/>
+                    <navigationItem key="navigationItem" title="Select your favorite team" id="jCs-th-Tj7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jJ-l7-PHT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,8 +233,20 @@
                     <view key="view" contentMode="scaleToFill" id="Vjh-tr-v7B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select sound volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQn-pC-smh">
+                                <rect key="frame" x="16" y="60" width="213" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="raq-Bh-rmy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AQn-pC-smh" firstAttribute="top" secondItem="raq-Bh-rmy" secondAttribute="top" constant="16" id="18S-9X-m2a"/>
+                            <constraint firstItem="AQn-pC-smh" firstAttribute="leading" secondItem="raq-Bh-rmy" secondAttribute="leading" constant="16" id="wuI-tE-0My"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sound" image="volume.1.fill" catalog="system" id="GMc-Jk-aDA">
                         <color key="badgeColor" name="AccentColor"/>
@@ -214,6 +278,8 @@
     <color key="tintColor" systemColor="systemGreenColor"/>
     <resources>
         <image name="CelebrationLightBackground" width="195" height="422"/>
+        <image name="HomeScreenGradient" width="195" height="150"/>
+        <image name="TeamBackdropImage" width="94" height="75"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="volume.1.fill" catalog="system" width="128" height="108"/>

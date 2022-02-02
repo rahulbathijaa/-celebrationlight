@@ -22,8 +22,11 @@ struct TeamController: View {
         
             VStack(alignment: .leading) {
                 
+                frame(width: 40, height: 40, alignment: .center)
                 
                 CustomController()
+                
+                
                 
 //                Text("Your favorites")
 //                    .font(.headline)
